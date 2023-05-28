@@ -1,0 +1,168 @@
+@import url(./_normalize.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+    line-height: 1.71;
+    color: #000000;
+}
+
+.header {
+    padding: 13px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-side {
+    gap: 50px;
+}
+
+.lang {
+    font-family: 'Tourney', cursive;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 0.82;
+    letter-spacing: 0.04em;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-family: 'Staatliches', cursive;
+    font-size: 22px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.menu__link:hover {
+    color: #483b3b;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    padding: 165px 0 20px;
+}
+
+.bg {
+    position: fixed;
+    right: 0;
+    z-index: -1;
+}
+
+.sidebar {
+    max-width: 385px;
+    height: 100%;
+    position: sticky;
+    top: 95px;
+}
+
+.sidebar-list {
+    padding: 10px;
+    list-style: none;
+}
+
+.sidebar-list__item {
+    margin-bottom: 70px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #BDBDBD;;
+}
+
+.sidebar-list__item:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-list__link,
+.article__title {
+    font-family: 'Francois One', sans-serif;
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.035em;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.sidebar-list__link {
+    text-decoration: none;
+}
+
+.content {
+    max-width: 785px;
+}
+
+.article {
+    margin-bottom: 70px;
+}
+
+.article__title {
+    position: relative;
+}
+
+.article__title::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 8px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
+
+.article__sup-title {
+    position: absolute;
+    padding-left: 10px;
+    font-family: 'Farro', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1;
+    text-transform: none;
+}
+
+.article__text_underlined {
+    text-decoration: underline;
+}
+
+.article__text_italic {
+    font-style: italic;
+}
+
+.article__text_bold {
+    font-weight: bold;
+}
+
+.article__text_bg-gray {
+    background: #DADADA;
+}
+
+.article > .article__text {
+    margin-top: 40px;
+}
